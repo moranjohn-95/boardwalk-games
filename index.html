@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +16,14 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo-sm-white.png" alt="Boardwalk Games logo" class="logo">
@@ -54,7 +51,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="booking.html" class="btn custom-button-filled ms-lg-3">Book now</a>
-                        </li>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -71,7 +68,7 @@
                     café delights. Whether you're a casual gamer seeking a cosy nook to unwind, a board game enthusiast
                     ready for your next challenge, or a student gamer looking for a fun, affordable hangout, we've got
                     you covered.</p>
-             <a href="booking.html" class="btn custom-button-outline mb-4">Book now</a>
+                <a href="booking.html" class="btn custom-button-outline mb-4">Book now</a>
             </div>
             <div class="col-12 col-xl-6">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -144,7 +141,7 @@
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
                         <img src="assets/images/services-2.webp" class="card-img-top"
-                            alt="Board games stacked in bookshelves, a man can be seen browsing the shelves" />
+                            alt="Board games stacked in bookshelves, a man can be seen browsing the shelves" >
                         <div class="card-body">
                             <!-- bootstrap cards come as h5 by default, changed to h3 to fit project heading hierarchy -->
                             <h3 class="card-title sub-heading-color">Game library</h3>
@@ -161,7 +158,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img src="assets/images/services-3.webp" class="card-img-top">
+                        <img src="assets/images/services-3.webp" class="card-img-top" alt="A chess tournament being held at Boardwalk Games">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Events</h3>
                             <p class="card-text">
@@ -194,7 +191,7 @@
                 </div>
             </div>
         </section>
-      > <section id="events" class="container section">
+        <section id="events" class="container section">
             <div class="row">
                 <div class="col-12">
                     <h2 class="display-6 text-center">Join our events</h2>
@@ -249,29 +246,27 @@
         </section>
     </main>
 
-    
- 
-
     <!-- Footer / contact section -->
     <!-- mt-auto added to push footer to the bottom of the page -->
     <footer id="contact" class="mt-auto">
         <div class="container section">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                <h2 class="display-6">Contact us!</h2>
+                    <h2 class="display-6">Contact us!</h2>
                 </div>
                 <!-- Contact info -->
                 <div class="col-12 col-md-6 col-xl-4">
                     <h3 class="sub-heading-color">Contact info</h3>
                     <address>
-                        <strong><i class="fa-solid fa-location-dot"></i>Boardwalk Games</strong><br>
+                        <strong><i class="fa-solid fa-location-dot"></i> Boardwalk Games</strong><br>
                         123 Boardwalk<br>
                         Boardwalk City, 12345
                     </address>
-                    <p><i class="fa-solid fa-phone"></i>012 345 6789<br>
-                    <i class="fa-regular fa-paper-plane"></i>info@boardwalk-games.co</p>
-                    <div class ="social-links my-4">
-                    <a href="https://www.instagram.com" target="_blank"
+                    <p><i class="fa-solid fa-phone"></i> 012 345 6789<br>
+                        <i class="fa-regular fa-paper-plane"></i> info@boardwalk-games.co
+                    </p>
+                    <div class="social-links my-4">
+                        <a href="https://www.instagram.com" target="_blank"
                             aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
                                 class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.facebook.com" target="_blank"
@@ -279,42 +274,42 @@
                                 class="fa-brands fa-square-facebook"></i></a>
                         <a href="https://www.x.com" target="_blank" aria-label="Visit our X feed (opens in a new tab)"
                             rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-                        </div>
-            </div>
+                    </div>
+                </div>
+
                 <!-- Opening times -->
                 <div class="col-12 col-md-6 col-xl-4">
-                <h3 class="sub-heading-color">Opening times</h3>
-                    <table class=" table table-dark">
-<thead>
-    <tr>
-      <th scope="col"><strong>Day</strong></th>
-      <th scope="col">Open</th>
-      <th scope="col">Close</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Mon</strong></td>
-      <td>Closed</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><strong>Tue-Thur</strong></td>
-      <td>11am</td>
-      <td>11pm</td>
-    </tr>
-    <tr>
-      <td><strong>Fri-Sat</strong></td>
-      <td>11am</td>
-      <td>12am</td>
-    </tr>
-    <tr>
-      <td><strong>Sun</strong></td>
-      <td>12pm</td>
-      <td>7pm</td>
-    </tr>
-  </tbody>
-</table>
+                    <h3 class="sub-heading-color">Opening times</h3>
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Day</th>
+                                <th scope="col">Open</th>
+                                <th scope="col">Close</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Mon</th>
+                                <td colspan="2">Closed</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tue - Thur</th>
+                                <td>11am</td>
+                                <td>11pm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Fri - Sat</th>
+                                <td>11am</td>
+                                <td>12am</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sun</th>
+                                <td>12pm</td>
+                                <td>7pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -327,7 +322,27 @@
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
-
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
