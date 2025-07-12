@@ -9,24 +9,25 @@
     --secondary-color: #aa9581; /* light brown */
     --highlight-color: #416a8e; /* blue */
     --highlight-color-light: #7a9fc2; /* light blue */
-
 }
 
-/* Global Styles */
+/* Global styles */
+
 body {
     font-family: var(--primary-font);
+    padding-top: 57.15px; /* pushes the top of the header down under fixed navbar */
 }
 
 h1,
 h2,
 h3 {
     font-family: var(--secondary-font);
-    color:var(--primary-color);
+    color: var(--primary-color);
 }
 
 h1,
 h2 {
-   text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -38,11 +39,10 @@ h2 {
 }
 
 .section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 4rem; /* prevent navbar overlap */
 }
 
-/* Buttons */ 
+/* Buttons */
 
 .custom-button-filled {
     border: 2px solid var(--highlight-color);
@@ -54,18 +54,17 @@ h2 {
     border: 2px solid var(--secondary-color);
     background-color: var(--secondary-color);
     color: white;
-
 }
 
 .custom-button-outline {
     border: 3px solid var(--highlight-color);
     padding: 7px 25px;
-    color: var(--highlight-color);
+    color: var(--highlight-color)
 }
 
 .custom-button-outline:hover {
     background-color: var(--highlight-color);
-    color: white;
+    color: white
 }
 
 /* Navbar */
@@ -96,7 +95,6 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-
 /* Events */
 
 #events .table {
@@ -117,7 +115,6 @@ h2 {
     padding: 5px 10px;
     font-size: 0.8rem;
 }
-
 /* Game library cards */
 
 #new-games .card,
@@ -150,6 +147,8 @@ h2 {
 #contact .social-links i {
     color: var(--highlight-color-light);
     font-size: 1.9rem;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -161,19 +160,18 @@ h2 {
     background-color: transparent;
 }
 
-/* grid visualisation CSS for testing */
-
-/* .container,
-.row {
-    border: 2px solid black;
-}
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-} */
-
 /* Media queries */
+
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+    /* increase font size in events table when screen size is large enough */
+    #events .table {
+        font-size: 1rem;
+    }
+    .student-discount {
+        font-size: 1rem;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
